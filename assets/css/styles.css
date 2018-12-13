@@ -1,0 +1,85 @@
+/* style reset */
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;}
+/* general settings */
+html, body {
+	overflow-x: hidden;
+}
+.register {
+	background-color: rgba(07,203,217,1);
+	min-height: 100vh;
+	position: relative;
+
+}
+h2 {
+	color: white;
+	text-shadow: 2px 2px 5px black;
+}
+form {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	background-color: rgba(255,255,255,0.7);
+	padding: 30px;
+	border-radius: 20px 0 20px 0;
+	color: black;
+	box-shadow: 5px 5px 5px black;
+}
+label {
+
+}
+.form-control {
+	width: 100%;
+	height: 30px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+}
+.button-block {
+	width: 100%;
+	text-align: center;
+	background-color: green;
+	color: white;
+	padding: 10px 30px;
+	border-radius: 5px;
+}
+#alert-u {
+	position: absolute;
+	visibility: hidden;
+	background-color: green;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	width: 50%;
+	top: 23%;
+	left: 25%;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px black;
+	display: none;
+}
+#alert-e {
+	position: absolute;
+	visibility: hidden;
+	background-color: green;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	width: 30%;
+	top: 41%;
+	left: 36%;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px black;
+	display: none;
+}
+#name:focus + #alert-u {
+	visibility: visible;
+	display: block;
+}
+#email:focus + #alert-e {
+	visibility: visible;
+	display: block;
+}
